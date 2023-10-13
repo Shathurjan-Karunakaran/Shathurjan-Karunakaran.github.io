@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Shathurjan_Karunakaran">
+	<meta name="description" content="portfolio">
+	<meta name="viewport" content="width=device-width initial-scale= 1">
+	<link href="style.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Corben&family=Lexend&family=RocknRoll+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Shathurjan_porfolio</title>
+</head>
+<body>
+	<main class="main">
+		<section class="header">
+			<nav>
+				<h1 class="Name">My Portfolio Webpage</h1>			
+				<div class="navigationBar" id="navBar">
+					<i class="fa fa-times" onclick="hideMenu()"></i>
+					<ul>
+						<li><a href="#aboutMe">About Me</a></li>		
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#projects">Projects</a></li>					
+						<li><a href="#contactForm">Let's Connect</a></li>
+					</ul>
+				</div>
+				<i class="fa fa-bars" onclick="showMenu()"></i>
+			</nav>
+		</section>
+		</div>			
+		<section class="hero">
+				<img src="images/profile_image.jpg" alt="Profile_Photo" class="profile">
+				<div class="herodetails">
+					<h1>Shathurjan Karunakaran</h1>
+					<h3>(student)</h3>
+				</div>
+		</section>
+		<section class="aboutMe" id="aboutMe">
+			<h1>About Me</h1>
+			<p>Hi, I'm Shathurjan. Now I'm working on my dreams.<br> My dream is Become a CEO of Google. Because I want to change this world to new era.<br> I planned everything to acheive that goal. </p>
+		</section>
+		<section class="skillsAndProjects">
+			<div class="skills" id="skills">
+				<h1 class="cardHeading">Skills</h1>
+				<img src="./images/cssfile.svg" title="css">
+				<img src="./images/html5.svg" title="Html5">
+				<img src="./images/project_management.svg" title="Project_Management">
+				<img src="./images/social_media.svg" title="Social_Media Management">
+				<img src="./images/webpage.svg" title="Webpage Designing">
+				<img src="./images/python.svg" title="Python">
+			</div>
+			<div class="projects" id="projects">
+				<h1 class="cardHeading">Projects</h1>
+				<div class="projectContainer">
+					<img src="./images/css.svg">
+					<div class="projectDescription">
+						<h4>Be Pro in Web development</h4>
+						<p>I'm studying some cources on online platforms</p>
+					</div>
+				</div><br><br>
+				<div class="projectContainer">
+					<img src="./images/html.svg">
+					<div class="projectDescription">
+						<h4>Farming Webpage Designing</h4>
+						<p>On Progress</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="contactForm" id="contactForm">
+			<h1>Let's Connect!</h1>
+			<form>
+				<div class="formGroup">
+					<label for="name">Enter Full Name</label><br>
+					<input type="text" id="name" placeholder="Full Name">
+				</div>
+				<div class="formGroup">
+					<label for="email">Email</label><br>
+					<input type="text" id="email" placeholder="Email">
+				</div>
+				<div class="formGroup">
+					<label for="message">Message</label><br>
+					<textarea placeholder="Send Some Message!" id="message" name="w3review" rows="4" cols="50"></textarea>
+				</div>
+				<button class="submitButton" onclick="{submit()}">Connect</button>
+			</form>
+		</section>
+	</main>
+	<script>
+		var navBar = document.getElementById('navBar');
+		function showMenu() {
+			navBar.style.right = "0";
+		}
+		function hideMenu(){
+			navBar.style.right = "-200px"
+		}
+	</script>
+</body>
+</html>
